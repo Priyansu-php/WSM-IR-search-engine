@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #EAEEF3;
+  color: #111827;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark body {
+  background-color: #0B0D13;
+  color: #E2E8F0;
+}
+
+.tabular-numbers {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Carbon diagonal stripe pattern from the design reference image */
+.bg-stripe-pattern {
+  background-color: #1E2024;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+
+.bg-stripe-light {
+  background-color: #CBD5E1;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.4) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+
+/* Minimalist pill badge */
+.badge-pill-success {
+  background-color: #ECFDF5;
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.badge-pill-neutral {
+  background-color: #F3F4F6;
+  color: #4B5563;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* KWIC query highlight in search results */
+.kwic-highlight strong,
+.kwic-highlight b,
+.kwic-highlight mark {
+  background-color: #EEF2FF;
+  color: #4338CA;
+  font-weight: 700;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(79, 70, 229, 0.15);
+}
+
+/* Sleek minimalist scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
